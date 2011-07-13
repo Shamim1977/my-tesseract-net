@@ -60,6 +60,24 @@ namespace TesseractNet
         {
             return false;
         }
+
+        #region IComparable Members
+
+        int IComparable.CompareTo(object obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
+
+        #region IEquatable<ADAPT_TEMPLATES> Members
+
+        bool IEquatable<ADAPT_TEMPLATES>.Equals(ADAPT_TEMPLATES other)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 
     public struct ADAPT_CLASS

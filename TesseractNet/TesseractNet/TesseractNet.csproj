@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{254C1AB7-BCFB-4827-A9ED-6E7A61DBA66E}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -44,6 +44,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tesseract.cs" />
     <Compile Include="Wordrec.cs" />
+    <Compile Include="WordRec\CBlob.cs" />
+    <Compile Include="WordRec\Denorm.cs" />
+    <Compile Include="WordRec\EVALUATION_RECORD.cs" />
+    <Compile Include="WordRec\Fcoord.cs" />
+    <Compile Include="WordRec\ICoord.cs" />
+    <Compile Include="WordRec\Matrix.cs" />
+    <Compile Include="WordRec\ScrollView.cs" />
+    <Compile Include="WordRec\TBlob.cs" />
+    <Compile Include="WordRec\TessLine.cs" />
+    <Compile Include="WordRec\TPoint.cs" />
+    <Compile Include="WordRec\UniCharSet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
