@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TesseractNet.WordRec
 {
-    public struct TBlob
+    public class TBlob
     {
         public TBlob(TBlob src)
         {
@@ -20,6 +20,7 @@ namespace TesseractNet.WordRec
 
         public static TBlob PolygonalCopy(CBlob src)
         {
+            return null;
         }
 
         private void CopyForm(TBlob src)
@@ -50,10 +51,12 @@ namespace TesseractNet.WordRec
         }
         public int NumOutlines()
         {
+            return 0;
         }
 
         public Tbox Bounding_box()
         {
+            return null;
         }
         public void Plot(ScrollView window,
             Color color,
@@ -64,13 +67,13 @@ namespace TesseractNet.WordRec
         public int BbArea()
         {
             int total_area = 0;
-            for (TessLine outline = outlines; outline != NULL; outline = outline.next)
-                total_area += outline->BBArea();
+            for (TessLine outline = outlines; outline != null; outline = outline.next)
+                total_area += outline.BBArea();
             return total_area;
         }
 
         TessLine outlines;
-        TBlob? next;
+        public TBlob next;
 
     }
 

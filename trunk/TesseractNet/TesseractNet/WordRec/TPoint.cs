@@ -19,18 +19,18 @@ namespace TesseractNet.WordRec
 
         public void add(TPoint point)
         {
-            this.x = this.x + point.x;
-            this.y = this.y + point.y;
+            this.x = (Int16)(this.x + point.x);
+            this.y = (Int16)(this.y + point.y);
         }
 
         public void div(int divisor)
         {
-            this.x = this.x / divisor;
-            this.y = this.y / divisor;
+            this.x = (Int16)(this.x / divisor);
+            this.y = (Int16)(this.y / divisor);
         }
 
 
-        Int16 x;                       // absolute x coord.
-        Int16 y;                       // absolute y coord.
+        public Int16 x;                       // absolute x coord.
+        public Int16 y;                       // absolute y coord.
     }
 }

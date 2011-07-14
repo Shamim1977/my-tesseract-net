@@ -22,12 +22,12 @@ namespace TesseractNet
         {
             if (templates != null)
             {
-                for (int i = 0; i < templates.Templates.NumClasses; i++)
-                {
-                    free_adapted_class(templates.Class[i]);
-                    free_int_templates(templates->Templates);
-                    Efree(templates);
-                }                
+                //for (int i = 0; i < templates.Templates.NumClasses; i++)
+                //{
+                //    free_adapted_class(templates.Class[i]);
+                //    free_int_templates(templates->Templates);
+                //    Efree(templates);
+                //}                
             }
         }
 
